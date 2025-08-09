@@ -1,0 +1,364 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/values",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetlistAudio",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/ListeMorceau",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/GetAllPlylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetAllPlylist",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/GetQueuelist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetQueuelist",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/GetMorceauPlaylist?id={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetMorceauPlaylist?id={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetMorceau?input={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetMorceau?input={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        //"Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/SaveNext?id={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/SaveNext?id={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        //"Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/afterPlay",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/afterPlay",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/nextUrl",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/nextUrl",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Test/Index",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/TestLog",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        //"Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetlistSug?input={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetlistSug?input={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetMorceausug?input={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetMorceausug?input={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetsugPlay?input={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetsugPlay?input={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetMorceausugurl?input={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetMorceausugurl?input={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Auth/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6002
+        }
+      ],
+      "UpstreamPathTemplate": "/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Playlist/addPlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+
+      ],
+      "UpstreamPathTemplate": "/addPlaylist",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Setting/update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+
+      ],
+      "UpstreamPathTemplate": "/updateSitting",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/addMorceau",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+
+      ],
+      "UpstreamPathTemplate": "/addMorceau",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/AddMorceauPlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+
+      ],
+      "UpstreamPathTemplate": "/AddMorceauPlaylist",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/addToFavorie",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+
+      ],
+      "UpstreamPathTemplate": "/addToFavorie",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/refreshToken",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6002
+        }
+      ],
+      "UpstreamPathTemplate": "/refreshToken",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/GetMorceaubyurl?url={everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/GetMorceaubyurl?url={everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Morceau/SearchMorceaux",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "UpstreamPathTemplate": "/SearchMorceaux",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {token}"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6002
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:6000"
+  }
+}

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "firstmusic", "firstmusic\firstmusic.csproj", "{95DFE132-FA10-4417-919E-F1B5BEB7C062}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure", "infrastructure\infrastructure.csproj", "{543BF3DF-5043-4B74-A39F-E0207E1FCEEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{9BD0861C-955C-4497-B578-0FDF2B7A64E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks", "Task\Tasks.csproj", "{8D34C401-F0ED-45FA-B662-D5270989D4AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\AuthService.csproj", "{FE7BF28F-8430-4CFA-A743-9F6DEE788485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{39038E53-D1E9-4509-BD40-5A664522F599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeExplode", "YoutubeExplode\YoutubeExplode.csproj", "{8116DA1C-761B-4BA6-8DE5-A1DBBDF55F6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95DFE132-FA10-4417-919E-F1B5BEB7C062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95DFE132-FA10-4417-919E-F1B5BEB7C062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95DFE132-FA10-4417-919E-F1B5BEB7C062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95DFE132-FA10-4417-919E-F1B5BEB7C062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543BF3DF-5043-4B74-A39F-E0207E1FCEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543BF3DF-5043-4B74-A39F-E0207E1FCEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543BF3DF-5043-4B74-A39F-E0207E1FCEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543BF3DF-5043-4B74-A39F-E0207E1FCEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD0861C-955C-4497-B578-0FDF2B7A64E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD0861C-955C-4497-B578-0FDF2B7A64E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD0861C-955C-4497-B578-0FDF2B7A64E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD0861C-955C-4497-B578-0FDF2B7A64E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D34C401-F0ED-45FA-B662-D5270989D4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D34C401-F0ED-45FA-B662-D5270989D4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D34C401-F0ED-45FA-B662-D5270989D4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D34C401-F0ED-45FA-B662-D5270989D4AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7BF28F-8430-4CFA-A743-9F6DEE788485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7BF28F-8430-4CFA-A743-9F6DEE788485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7BF28F-8430-4CFA-A743-9F6DEE788485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7BF28F-8430-4CFA-A743-9F6DEE788485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39038E53-D1E9-4509-BD40-5A664522F599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39038E53-D1E9-4509-BD40-5A664522F599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39038E53-D1E9-4509-BD40-5A664522F599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39038E53-D1E9-4509-BD40-5A664522F599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8116DA1C-761B-4BA6-8DE5-A1DBBDF55F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8116DA1C-761B-4BA6-8DE5-A1DBBDF55F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8116DA1C-761B-4BA6-8DE5-A1DBBDF55F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8116DA1C-761B-4BA6-8DE5-A1DBBDF55F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AF3C417-2C41-461A-A5F9-15CB36773275}
+	EndGlobalSection
+EndGlobal
